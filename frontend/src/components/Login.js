@@ -29,7 +29,7 @@ const Login = () => {
 
 
             localStorage.setItem('access_token', response.data.access);
-            localStorage.setItem('refreshToken', refresh);
+            localStorage.setItem('refreshToken', response.data.refresh);
 
             login({ username: formData.username });
             navigate('/');
