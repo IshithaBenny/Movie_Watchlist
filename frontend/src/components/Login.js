@@ -21,7 +21,7 @@ const Login = () => {
         setLoading(true);
 
         try {
-            const response = await api.post('/token/', {
+            const response = await api.post('token/', {
                 username: formData.username,
                 password: formData.password,
             });

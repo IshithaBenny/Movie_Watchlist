@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: ' https://movie-watchlist-backend-w1sr.onrender.com',
+    baseURL: ' https://movie-watchlist-backend-w1sr.onrender.com/api/',
 });
 
 // This intercepts EVERY request and glues your token to it
@@ -20,3 +20,5 @@ axiosInstance.interceptors.request.use(
 );
 
 export default axiosInstance;
+const api = axiosInstance;
+export default api;
