@@ -143,7 +143,8 @@ REST_FRAMEWORK = {
     ],
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://movie-watchlist-flame-three.vercel.app",
-]
+# CORS_ALLOWED_ORIGINS = [
+# "http://localhost:3000",
+# "https://movie-watchlist-flame-three.vercel.app",
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
